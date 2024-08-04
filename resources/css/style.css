@@ -49,11 +49,13 @@ p {
     margin: 50px 20px;
 }
 
-img {
-    max-width: 80%;
-    height: auto;
-    width: 320px; /* Default width */
+
+#image-camping {
+    width: 600px; /* Larger fixed width for the specific image */
+    max-width: 100%; /* Ensures it doesn't exceed the container width */
 }
+
+
 
 @media (max-width: 600px) {
     h1 {
@@ -72,15 +74,28 @@ img {
         font-size: 0.9em;
     }
 
-    video, img {
+    video {
         width: 100%;
         max-width: 320px; /* Ensures video and images are smaller on larger screens as well */
     }
+
+    #image-camping {
+        width: 100%; /* Responsive width for smaller screens */
+        max-width: 600px; /* Ensures it doesn't exceed the larger fixed width */
+    }
+    
 }
 
 @media (min-width: 601px) and (max-width: 1170px) {
-    video, img {
-        width: 100%;
+    video {
+        width: 80%;
         max-width: 100%; /* Full width for larger screens */
     }
+
+    #image-camping {
+        width: 600px; /* Larger fixed width for the specific image */
+        max-width: 100%; /* Ensures it doesn't exceed the container width */
+    }
+
 }
+
