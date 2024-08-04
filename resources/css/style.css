@@ -1,39 +1,78 @@
-body{
+body {
     background-color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     font-weight: normal;
+    margin: 0;
+    padding: 0;
 }
 
-header{
+header {
     text-align: center;
+    padding: 20px;
 }
 
-h1{
-    font-size: 50px;
+h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
 }
 
-.cta{
+.cta {
     color: aquamarine;
-    font-size: 16px;
+    font-size: 1em;
+    text-decoration: none;
 }
 
-.guide{
+video {
+    max-width: 80%;
+    height: auto;
+    width: 450px; /* Default width */
+}
+
+.guide {
     text-align: center;
-    margin-top: 50px;
+    margin: 50px 20px;
 }
 
-h2{
-    font-size:  42px;
+h2 {
+    font-size: 2.5em;
     font-weight: 300;
 }
 
-p{
-    font-size: 21px;
+p {
+    font-size: 1em;
     color: grey;
 }
 
-.coming-soon{
+.coming-soon {
     text-align: center;
-    margin-top: 50px;
+    margin: 50px 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .cta {
+        font-size: 0.9em;
+    }
+
+    video {
+        width: 100%;
+        max-width: 320px; /* Ensures video is smaller on larger screens as well */
+    }
 }
