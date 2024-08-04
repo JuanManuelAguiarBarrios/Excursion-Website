@@ -26,7 +26,7 @@ h1 {
 video {
     max-width: 80%;
     height: auto;
-    width: 450px; /* Default width */
+    width: 320px; /* Default width */
 }
 
 .guide {
@@ -50,8 +50,9 @@ p {
 }
 
 img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
+    width: 320px; /* Default width */
 }
 
 @media (max-width: 600px) {
@@ -71,8 +72,15 @@ img {
         font-size: 0.9em;
     }
 
-    video {
+    video, img {
         width: 100%;
-        max-width: 320px; /* Ensures video is smaller on larger screens as well */
+        max-width: 320px; /* Ensures video and images are smaller on larger screens as well */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1170px) {
+    video, img {
+        width: 100%;
+        max-width: 100%; /* Full width for larger screens */
     }
 }
